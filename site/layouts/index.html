@@ -1,9 +1,111 @@
 {{ define "main" }}
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+  <section class="hero viewport-mid-height">
+      <div class="container  d-flex align-items-center justify-content-left">
+      <div class="row">
+        <div class="space"></div>
+        <div class="slogan col-md-12">
+          <h1> Atteignez les limites <br> que vous <del>n'auriez jamais</del> <br>  imaginez</h1>
+          <p class="text-left"> Johnna Doe <span> <b>votre</b> coach personnel</span></p>
+        </div>
+        <div class="space-mid"></div>
+        <div class="col-md-12">
+          <a href="" class="btn btn-dark"> Programme personnalisé</a>    <a href="" class="btn btn-dark"> Nos programmes</a>
+        </div>
+    </div>
+    </div>
+  </section>
+  <section class="training">
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-6 debutant">
+          <h1>Débutant</h1>
+          <p> <i class=" fa fa-chevron-right"></i></p>
+        </div>
+        <div class="col-md-6 pro">
+          <h1>professionnel</h1>
+          <p> <i class=" fa fa-chevron-right"></i></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
 
+  <section class="team viewport-height">
+    <div class="container">
+      <div class="space"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2> Rencontrez le coach <sup><i class="fa fa-facebook-square"></i> <i class="fa fa-instagram"></i> <i class="fa fa-google-plus-square"></i></sup></h2>
+          <h6>Johnna Doe</h6>
+          <div class="space-mid"></div>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi rem, assumenda tempore harum delectus minima aliquam suscipit magnam reiciendis. Dolorem blanditiis aspernatur consectetur itaque et expedita dicta. Laboriosam, voluptatibus.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi rem, assumenda tempore harum delectus minima aliquam suscipit magnam reiciendis. Dolorem blanditiis aspernatur consectetur itaque et expedita dicta. Laboriosam, voluptatibus.
+          Laboriosam, voluptatibus.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores commodi rem, assumenda tempore harum delectus minima aliquam suscipit magnam reiciendis. Dolorem blanditiis aspernatur consectetur itaque et expedita dicta. Laboriosam, voluptatibus. </p>
+          <div class="space-mid"></div>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+  </section>
+
+    <section id="cta-text" class="">
+    <div class="container-fluid clearfix">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-12 text-center">
+          <h1> Celui qui tombe et qui se relève est bien plus fort que celui qui ne tombe jamais </h1>
+          <div class="space-mid"></div>
+          <a href="#" class="btn btn-outline-light"> Commencer l'entrainement aujourd'hui</a>
+        </div>
+      </div>
+    </div>
+  </section> <!-- End Features Section -->
+
+  <section class="galerie">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="https://res.cloudinary.com/elcoilombe/image/upload/v1527866005/pexels-photo-241456.jpg" alt="Coaching">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="https://res.cloudinary.com/elcoilombe/image/upload/v1527866507/pexels-photo-935965.jpg" alt="Bodubuilding">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="https://res.cloudinary.com/elcoilombe/image/upload/v1527866003/workout-fitness-street-workout-trees-819691.jpg" alt="Boxing">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="https://res.cloudinary.com/elcoilombe/image/upload/v1527866003/pexels-photo-703012.jpg" alt="Coaching">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="https://res.cloudinary.com/elcoilombe/image/upload/v1527865957/pexels-photo-260447.jpg" alt="Bodubuilding">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="https://res.cloudinary.com/elcoilombe/image/upload/v1527866003/pexels-photo-949129.jpg" alt="Boxing">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact-home" class="">
+    <div class="container-fluid clearfix">
+      <div class="row text-center justify-content-center">
+          <h1> Contactez moi </h1>
+          <p> Vous avez besoin d'un renseignement sur ce modèle ? Vous souhaitez expliquer votre besoin ? Obtenir un devis ? Contactez-nous par message, nous prendrons le temps de répondre à toutes vos demandes </p>
+      </div>
+      <div class="space-mid"></div>
+      <div class="col-md-8 offset-md-2">
+        <form action="" id="contact">
+          <input type="text" name="nom" placeholder="Nom">
+          <input type="text" name="email" placeholder="Votre adresse email">
+          <input type="tel" name="tel" placeholder="Votre numéro de téléphone">
+          <div class="space-mid"></div>
+          <textarea name="" id="" cols="100" rows="10" form="contact" placeholder="Votre message ici.."></textarea>
+          <br>
+          <button type="submit" form="contact" class="btn btn-dark"> Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
 {{end}}

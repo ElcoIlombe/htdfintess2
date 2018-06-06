@@ -7,8 +7,279 @@
 /*
   Or add your statements here:
  */
-body{
-  font-family: sans-serif;
-  font-size: 1em;
+
+/*// GLOBAL*/
+body
+{
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810096/High%20TDev/htd-fitness2.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Typography */
+body p, body h1,body h2,body h3,body h4,body h5,body h6 {
+  font-family: 'Raleway', cursive;
+}
+.title {
+  color: white;
+  font-size: 8vh;
+}
+.color-white{
+  color: white;
+}
+h2{
+  font-weight: bold;
+}
+/* Display */
+.space {
+  padding: 35px 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  z-index: -999;
+}
+.space-mid {
+  padding: 17.5px 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0);
+  z-index: -999;
+}
+.full-height {
+  padding: 8vh 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.viewport-height{
+    height: 100vh!important;
+}
+.viewport-mid-height{
+    height: 80vh!important;
+}
+.main-bg {
+  background-color: #5cc1a9;
+  color: white;
+}
+/* Navbar */
+nav {
+  width: 55%;
+  position: absolute;
+  background: rgba(255, 152, 0, 0.7);
+  padding: 15px;
+  top: 50px;
+  z-index: 950;
+}
+nav a {
+  color: white!important;
+  font-size: 1.2em;
+}
+nav a:hover {
+  color: black!important;
+  transition: 0.5s;
+}
+.black {
+  background: #fff!important;
+  color: black;
+  transition: 1s;
+}
+.black li a.nav-item, .black li a.nav-link{
+  color: black!important;
+}
+.navbar-dark{
+  transition: 1s;
+}
+/*Overlay*/
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+/*HERO */
+.hero {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810096/High%20TDev/htd-fitness2.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh!important;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+.hero .container{
+  height: 100%;
+}
+.hero .row{
+  width: 100%;
+}
+.hero .slogan {
+  color: white;
+  text-transform: uppercase;
+}
+
+.slogan h1{
+  font-weight: bold;
+  font-size: 3.5em;
+}
+.slogan del, .slogan span {
+  color: #ff9800;
+}
+
+/*training*/
+.training {
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 1.5em;
+}
+.training .debutant {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527863095/pexels-photo-416754.jpg") no-repeat;
+  box-sizing: border-box;
+  padding: 150px 0;
+  background-size: cover;
+
+}
+.training .pro {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527863095/pexels-photo-414029.jpg") no-repeat;
+  padding: 150px 0;
+  background-size: cover;
+}
+.training .fa-chevron-right {
+  color: white;
+  padding: 12px 15px;
+  border-radius: 100%;
+  border: 3px solid #ff9800;
+}
+/* Team */
+/*Team */
+.team {
+  color: #fff;
+}
+.team h2 {
+  color: #ff9800;
+}
+.team h2 .fa-facebook-square{
+  color: #3b5998
+}
+.team h2 .fa-instagram{
+  color:   #c1558b;
+}
+.team h2 .fa-google-plus-square{
+  color:#d9534f;
+}
+/* Call to action text*/
+
+#cta-text {
+  background: #8e5500;
+  color: white;
+  padding: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#cta-text h1 {
+  font-size: 2em;
+}
+
+/*Photos*/
+
+.galerie .container-fluid .row .col-md-4 {
+  padding: 0;
+}
+
+/* contact home */
+#contact-home {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527866808/box-1609657_1280.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#contact-home h1 {
+  font-size: 2em;
+}
+form {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
   text-align: center;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+}
+/*Footer */
+
+.search-text{
+  margin-top:50px;
+  background-color: #272d33;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+.search-text .input-search{
+  height:45px;
+  width:40%;
+  padding-left:20px;
+    color:#333;
+}
+
+.search-text .btn-search{
+    background: #da3e44;
+    font-family:Roboto;
+    border:none;
+  color:#FFF;
+  height: 45px;
+    width: 80px;
+}
+
+.search-text h4{
+    color: #FFF;
+    font-weight: 700;
+}
+
+footer{
+     background-color: black;
+     padding:30px 0px 5px 0px;
+}
+
+.logo{
+    color:#FFF;
+    font-weight:700;
+    font-size:30px;
+}
+
+.address span , .menu span{
+   color: #FFF;
+   font-weight: bold;
+   border-bottom: 1px solid #c7c7c7;
+   padding:10px 0px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 16px;
+   letter-spacing: 3px;
+}
+
+.address li a , .menu li a{
+    color:#FFF;
+    letter-spacing: 3px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.address li, .menu li{
+    margin:20px 0px;
+    list-style: none;
+}
+
+.address .fa{
+    color: #fff;
+    margin-right: 10px;
+    font-size:18px;
 }
