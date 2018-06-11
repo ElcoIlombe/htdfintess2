@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-    <title>{{ $.Site.Title }}</title>
+    <title>{{ $.Site.Title }}{{ .Title }}</title>
       <!-- Bootstrap CSS & Fontawesome-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css"/>
     <!-- Google Font -->
@@ -15,7 +16,19 @@
     <!-- AOS Effect -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body>
+  {{ if eq .Title "HTD | Fitness | Coaching Sportif" }}
+  <body id="home-body">
+  {{ else if eq .Title "About" }}
+  <body id="about-body">
+  {{ else if eq .Title "Programmes" }}
+  <body id="programmes-body">
+  {{ else if eq .Title "Galerie" }}
+  <body id="galerie-body">
+  {{ else if eq .Title "Contact" }}
+  <body id="contact-body">
+  {{ end}}
+
+
     {{ block "header" . }}{{ partial "header" . }}{{end}}
     {{ block "main" . }}{{end}}
 
@@ -23,6 +36,13 @@
 
 
     <script src="app.js"></script>
-
+      <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+      </script>
+    <!-- Bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
   </body>
 </html>

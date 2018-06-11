@@ -1,0 +1,24 @@
+{{ define "main" }}
+  {{ partial "hero-programmes" .}}
+
+<section id="contact-page" class="">
+    <div class="container-fluid clearfix">
+      <div class="row text-center justify-content-center">
+          <h1> Contactez moi </h1>
+          <p> Vous avez besoin d'un renseignement sur ce modèle ? Vous souhaitez expliquer votre besoin ? Obtenir un devis ? Contactez-nous par message, nous prendrons le temps de répondre à toutes vos demandes </p>
+      </div>
+      <div class="space-mid"></div>
+      <div class="col-md-8 offset-md-2">
+        <form action="" id="contact">
+          <input type="text" name="nom" placeholder="Nom">
+          <input type="text" name="email" placeholder="Votre adresse email">
+          <input type="tel" name="tel" placeholder="Votre numéro de téléphone">
+          <div class="space-mid"></div>
+          <textarea name="" class="form-control" rows="10" form="contact" placeholder="Votre message ici.."></textarea>
+          <br>
+          <button type="submit" form="contact" class="btn btn-dark"> Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+{{end}}
