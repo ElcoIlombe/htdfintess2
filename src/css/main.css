@@ -9,12 +9,13 @@
  */
 
 /*// GLOBAL*/
-body
+#home-body
 {
   background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810096/High%20TDev/htd-fitness2.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 /* Typography */
 body p, body h1,body h2,body h3,body h4,body h5,body h6 {
@@ -93,6 +94,8 @@ nav a:hover {
   width: 100%;
   background-color: rgba(0,0,0,0.3);
 }
+
+/*HOMEPAGE STYLE*/
 /*HERO */
 .hero {
   background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810096/High%20TDev/htd-fitness2.jpg") no-repeat;
@@ -111,7 +114,7 @@ nav a:hover {
 .hero .row{
   width: 100%;
 }
-.hero .slogan {
+.slogan {
   color: white;
   text-transform: uppercase;
 }
@@ -214,6 +217,174 @@ input {
     border-bottom: 1px solid gray;
     background: transparent;
 }
+
+/*ABOUT STYLE */
+#about-body
+{
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528299803/High%20TDev/Fitness/american-football-athlete-ball-140039.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: 115% 100%;
+  background-position: top;
+}
+
+.hero-about {
+  height: 100vh!important;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+.hero-about .container{
+  height: 100%;
+}
+.hero-about .row{
+  width: 100%;
+}
+.hero-about .slogan del:hover{
+  opacity: 0;
+  transition: 1s;
+}
+.hero-about .slogan del{
+  transition: 1s;
+}
+/*Story About*/
+
+.story-about {
+background: black;
+color: white;
+}
+.story-about hr {
+  background: #0165e6;
+  width: 5px;
+  height: 5px;
+  border: 8px solid #0165e6;
+  border-radius: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.about-left {
+  border-right: 1px solid #0165e6;
+}
+.about-right {
+  border-left: 1px solid #0165e6;
+}
+
+/* Team About*/
+.team-about {
+  background: #0165e6;
+  color: white;
+}
+
+.team-about h4{
+  font-size: 2.5em;
+}
+.team-about a{
+  width: 100%;
+}
+.team-about .col-md-3{
+  padding: 0 0;
+  text-align: center;
+}
+.fadein{
+  opacity: 0;
+  transition: 0.5s;
+  padding: 100px 0;
+  height: 100%;
+  width: 100%;
+}
+.fadein:hover{
+  opacity: 1!important;
+  background: rgba(0,0,0,0.5);
+  transition: 1s;
+}
+
+.team1 {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528307665/High%20TDev/Fitness/pexels-photo-733500.jpg") no-repeat;
+  background-size: cover;
+}
+.team2 {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528307735/High%20TDev/Fitness/pexels-photo-209895.jpg") no-repeat;
+  background-size: cover;
+}
+.team3 {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528307739/High%20TDev/Fitness/pexels-photo-622297.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.team4 {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528307731/High%20TDev/Fitness/pexels-photo-1033373.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+
+/* PROGRAMMMES PAGE */
+
+#programmes-body
+{
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528720836/sport-2264825_1280.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+.hero-programmes .row{
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.programmes {
+  background: black;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.programmes h2 {
+  color: white;
+}
+.programmes .row>div {
+  background-color: rgba(255, 152, 0,0.8);
+  padding: 1px;
+  border-left:1px solid black;
+}
+
+#programmes-body .programmes button {
+  padding: 15px;
+}
+
+/* GALLERIE IMG*/
+#galerie-body
+{
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528725572/fitness-594143_1280.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+
+/* CONTACT PAGE */
+#contact-body
+{
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528728821/High%20TDev/Fitness/pexels-photo-451552.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+}
+#contact-page {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527866808/box-1609657_1280.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#contact h1 {
+  font-size: 2em;
+}
+
+
 /*Footer */
 
 .search-text{
@@ -282,4 +453,71 @@ footer{
     color: #fff;
     margin-right: 10px;
     font-size:18px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    width: 100%;
+
+  }
+
+  #home-body {
+    background: black;
+    background-size: contain;
+  }
+  #home-body .hero {
+    background-attachment: scroll;
+    background-position: right;
+  }
+  #home-body .hero .row {
+    width: 100vw;
+  }
+  #home-body .hero .slogan {
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+  }
+  #about-body {
+    background-size: cover;
+    background-position: top;
+  }
+  #about-body .hero-about .row {
+    width: 100vw;
+  }
+  #about-body .hero-about .slogan {
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+  }
+  #programmes-body {
+    background-size: cover;
+    background-position: left;
+  }
+  #programmes-body .hero-programmes .row {
+    width: 100vw;
+  }
+  #programmes-body .hero-programmes .slogan {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+  }
+  #galerie-body {
+    background-size: cover;
+  }
+  #galerie-body .hero-programmes .row {
+    width: 100vw;
+  }
+  #galerie-body .hero-programmes .slogan {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+  }
+  #contact-body {
+    background-size: cover;
+  }
+  #contact-body .hero-programmes .row {
+    width: 100vw;
+  }
+  #contact-body .hero-programmes .slogan {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+  }
 }
