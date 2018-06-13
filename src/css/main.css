@@ -497,6 +497,12 @@ footer{
   #contact-page .col-md-8, #contact-page .col-xs-8{
     padding: 0;
   }
+
+  #contact-page, #contact-home {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
 /*HOMEPAGE */
   #home-body {
     background: black;
