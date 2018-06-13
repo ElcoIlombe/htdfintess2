@@ -15,6 +15,10 @@
   background-attachment: fixed;
   background-size: cover;
 }
+body{
+  overflow-x: hidden;
+  width: 100vw;
+}
 
 
 /* Typography */
@@ -253,25 +257,25 @@ background: black;
 color: white;
 }
 .story-about hr {
-  background: #0165e6;
+  background: #ff9800;
   width: 5px;
   height: 5px;
-  border: 8px solid #0165e6;
+  border: 8px solid #ff9800;
   border-radius: 100%;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 .about-left {
-  border-right: 1px solid #0165e6;
+  border-right: 1px solid #ff9800;
 }
 .about-right {
-  border-left: 1px solid #0165e6;
+  border-left: 1px solid #ff9800;
 }
 
 /* Team About*/
 .team-about {
-  background: #0165e6;
+  background: #ff9800;
   color: white;
 }
 
@@ -457,12 +461,43 @@ footer{
 
 
 @media screen and (max-width: 768px) {
+  /*GENERAL */
+
+  .viewport-height{
+    height: 100%!important;
+}
+.viewport-mid-height{
+    height: 80%!important;
+}
 
   nav {
     width: 100%;
-
+    position: static;
+    top: 0;
+    background: black;
   }
+  nav .navbar-toggler{
+    background-color: #ff9800;
+  }
+  .slogan h1{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.fadein {
+  opacity: 1!important;
+  background: rgba(0,0,0,0.5);
+}
+  /* CONTACT */
 
+  #contact-home .col-md-8, #contact-home .col-xs-8,
+  #contact .col-md-8, #contact .col-xs-8{
+    padding: 0;
+  }
+  #contact-home .col-md-8, #contact-home .col-xs-8,
+  #contact-page .col-md-8, #contact-page .col-xs-8{
+    padding: 0;
+  }
+/*HOMEPAGE */
   #home-body {
     background: black;
     background-size: contain;
@@ -478,9 +513,17 @@ footer{
     background: rgba(0,0,0,0.3);
     width: 100%;
   }
+  /* ABOUT PAGE */
   #about-body {
+    background-attachment: scroll;
     background-size: cover;
-    background-position: top;
+    background-position: right;
+  }
+  #about-body .hero-about .row {
+    background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528299803/High%20TDev/Fitness/american-football-athlete-ball-140039.jpg") no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: left;
   }
   #about-body .hero-about .row {
     width: 100vw;
@@ -489,9 +532,16 @@ footer{
     background: rgba(0,0,0,0.3);
     width: 100%;
   }
+
+  /* PROGRAMMES PAGE */
   #programmes-body {
+    background-attachment: scroll;
     background-size: cover;
     background-position: left;
+  }
+#programmes-body .hero-programmes{
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528720836/sport-2264825_1280.jpg") no-repeat;
+  background-size: cover;
   }
   #programmes-body .hero-programmes .row {
     width: 100vw;
@@ -500,7 +550,17 @@ footer{
     background: rgba(0,0,0,0.5);
     width: 100%;
   }
+
+  /* GALERIE PAGE */
+
+
   #galerie-body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: left;
+  }
+  #galerie-body .hero-programmes {
+    background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528725572/fitness-594143_1280.jpg") no-repeat;
     background-size: cover;
   }
   #galerie-body .hero-programmes .row {
@@ -510,7 +570,14 @@ footer{
     background: rgba(0,0,0,0.5);
     width: 100%;
   }
+  /*CONTACT*/
   #contact-body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: left;
+  }
+  #contact-body .hero-programmes{
+    background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1528728821/High%20TDev/Fitness/pexels-photo-451552.jpg") no-repeat;
     background-size: cover;
   }
   #contact-body .hero-programmes .row {
