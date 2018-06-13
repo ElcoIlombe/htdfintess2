@@ -20,6 +20,10 @@ body{
   width: 100vw;
 }
 
+#htd-bar {
+  position: fixed;
+  z-index: 1000;
+}
 
 /* Typography */
 body p, body h1,body h2,body h3,body h4,body h5,body h6 {
@@ -468,6 +472,10 @@ footer{
 }
 .viewport-mid-height{
     height: 80%!important;
+}
+#htd-bar {
+  position: relative;
+  z-index: 1000;
 }
 
   nav {
