@@ -11,7 +11,7 @@
 /*// GLOBAL*/
 #home-body
 {
-  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810096/High%20TDev/htd-fitness2.jpg") no-repeat;
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810089/scott-webb-22620-unsplash.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -106,7 +106,7 @@ nav a:hover {
 /*HOMEPAGE STYLE*/
 /*HERO */
 .hero {
-  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527810096/High%20TDev/htd-fitness2.jpg") no-repeat;
+  background: url(https://res.cloudinary.com/elcoilombe/image/upload/v1527810089/scott-webb-22620-unsplash.jpg) no-repeat;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
